@@ -1,9 +1,10 @@
 # Win32AboutDialog
-Example About Dialog written in C++ (winAPI) 
+Example About Dialog written in C++ (winAPI; win32) 
 
-<image href="photos/screenshot.png">
+<img src="photos/screenshot.png">
 
-**AboutDiag.cpp (*.h; *.rc)** are the About Dialog itself *(Never thought of that!)*
+__AboutDiag.cpp__ _(*.h; *.rc)_ are the About Dialog itself *(Never thought of that!)*
+
 **run.c** runs the command from the DLL
 
 the banner must be a bitmap at **500 x 100 [pixels]** size.
