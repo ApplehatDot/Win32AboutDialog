@@ -1,7 +1,7 @@
 #include <windows.h>
 #include "AboutDiag.h"
 
-//definicje
+// Definitions
 
 #define wWidth 500
 #define wHeight 400
@@ -15,9 +15,7 @@ LPCWSTR ImagePath = L"assets\\Banner.bmp";
 extern "C" __declspec(dllexport) void ShowAboutDialog(HINSTANCE hInstance, HWND hwndParent);
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 void AddControl(HWND);
-
-
-//koniec definicji
+// end of definitions
 
 extern "C" __declspec(dllexport) void ShowAboutDialog(HINSTANCE hInstance, HWND hwndParent){
 	const wchar_t CLASS_NAME[] = L"WndAboutDialog";
@@ -65,9 +63,8 @@ extern "C" __declspec(dllexport) void ShowAboutDialog(HINSTANCE hInstance, HWND 
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam){
 	switch (uMsg){
-		case WM_CREATE:{
+		case WM_CREATE{
 			AddControl(hwnd);
-			
 			break;
 		}
 		
@@ -77,8 +74,8 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam){
 			
 		case WM_COMMAND:
 			if (LOWORD(wParam) == IDC_MYBUTTON) {
-                DestroyWindow(hwnd);
-            }
+                		DestroyWindow(hwnd);
+            		}
 			break;
 	}
 	return DefWindowProc(hwnd, uMsg, wParam, lParam);
