@@ -1,0 +1,3 @@
+#include "AboutDiag.h"
+
+IDI_ICON1 ICON "assets\\example.ico"
