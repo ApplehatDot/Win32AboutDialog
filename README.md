@@ -1,7 +1,7 @@
 # Win32AboutDialog
 Example About Dialog written in C++ (winAPI) 
 
-<image href="photos/screenshot.">
+<image href="photos/screenshot.png">
 
 **AboutDiag.cpp (*.h; *.rc)** are the About Dialog itself *(Never thought of that!)*
 **run.c** runs the command from the DLL
