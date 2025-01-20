@@ -10,7 +10,8 @@ __AboutDiag.cpp__ _(*.h; *.rc)_ are the About Dialog itself *(Never thought of t
 the banner must be a bitmap at **500 x 100 [pixels]** size.
 _[Why Bitmap? WinAPI has the commands to do it, not so complicated compared to other ones.]_
 
-**what needs to be fixed?** - Let the dialog display the whole `wchar_t` and not the 'A' (a bug.) 
+~~**what needs to be fixed?** - Let the dialog display the whole `wchar_t` and not the 'A' (a bug.)~~ fixed
+
 
 # Compile
 using MinGW, compile both things using these commands:
