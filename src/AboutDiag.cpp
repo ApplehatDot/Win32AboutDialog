@@ -78,7 +78,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam){
             		}
 			break;
 	}
-	return DefWindowProc(hwnd, uMsg, wParam, lParam);
+	return DefWindowProcW(hwnd, uMsg, wParam, lParam);
 };
 
 void AddControl(HWND hwnd){
